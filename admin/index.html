@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Adopt Admin</title>
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css" />
+    <link rel="stylesheet" href="vendors/flag-icon-css/css/flag-icon.min.css" />
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css" />
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="./vendors/daterangepicker/daterangepicker.css" />
+    <link rel="stylesheet" href="./vendors/chartist/chartist.min.css" />
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <!-- endinject -->
+    <!-- Layout styles -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- End layout styles -->
+    <link rel="shortcut icon" href="./images/favicon.png" />
+  </head>
+  <body>
+    <div class="container-scroller">
+      <!-- partial:partials/_navbar.html -->
+      <nav class="navbar default-layout-navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+        <div class="navbar-brand-wrapper d-flex align-items-center">
+          <a class="navbar-brand brand-logo" href="index.html">
+            <img src="images/logo.svg" alt="logo" class="logo-dark" />
+          </a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-mini.svg" alt="logo" /></a>
+        </div>
+        <div class="navbar-menu-wrapper d-flex align-items-center flex-grow-1">
+          <h5 class="mb-0 font-weight-medium d-none d-lg-flex">Welcome AdoptMe dashboard!</h5>
+          <ul class="navbar-nav navbar-nav-right ml-auto">
+            <form class="search-form d-none d-md-block" action="#">
+              <i class="icon-magnifier"></i>
+              <input type="search" class="form-control" placeholder="Search Here" title="Search here" />
+            </form>
+            <li class="nav-item">
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link"><i class="icon-chart"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+            </li>
+            <li class="nav-item dropdown d-none d-xl-inline-flex user-dropdown">
+              <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
+                <img class="img-xs rounded-circle ml-2" src="images/faces/face8.jpg" alt="Profile image" /> <span class="font-weight-normal"> Herman Ahab </span></a
+              >
+              <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
+                <div class="dropdown-header text-center">
+                  <img class="img-md rounded-circle" src="Stellar-" alt="Profile image" />
+                  <p class="mb-1 mt-3">Herman Ahab</p>
+                  <p class="font-weight-light text-muted mb-0">herman@student.undiksha.ac.id</p>
+                </div>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-user text-primary"></i> My Profile <span class="badge badge-pill badge-danger"></span></a>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-speech text-primary"></i> Messages</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-energy text-primary"></i> Activity</a>
+                <a class="dropdown-item"><i class="dropdown-item-icon icon-question text-primary"></i> FAQ</a>
+                <a href="../../login.html" class="dropdown-item"><i class="dropdown-item-icon icon-power text-primary"></i>Sign Out</a>
+              </div>
+            </li>
+          </ul>
+          <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+            <span class="icon-menu"></span>
+          </button>
+        </div>
+      </nav>
+      <!-- partial -->
+      <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        <nav class="sidebar sidebar-offcanvas" id="sidebar">
+          <ul class="nav">
+            <li class="nav-item nav-profile">
+              <a href="#" class="nav-link">
+                <div class="profile-image">
+                  <img class="img-xs rounded-circle" src="images/faces/face8.jpg" alt="profile image" />
+                  <div class="dot-indicator bg-success"></div>
+                </div>
+                <div class="text-wrapper">
+                  <p class="profile-name">Herman Ahab</p>
+                  <p class="designation">Administrator</p>
+                </div>
+                <div class="icon-container">
+                  <i class="icon-bubbles"></i>
+                  <div class="dot-indicator bg-danger"></div>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item nav-category">
+              <span class="nav-link">Menu</span>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <span class="menu-title">Dashboard</span>
+                <i class="icon-screen-desktop menu-icon"></i>
+              </a>
+              <div class="collapse" id="auth">
+                <ul class="nav flex-column sub-menu">
+                </ul>
+              </div>
+            </li>
+              </span>
+            </li>
+          </ul>
+        </nav>
+        <!-- partial -->
+        <div class="main-panel">
+          <div class="content-wrapper">
+            <div class="row purchace-popup">
+              <div class="col-12 stretch-card grid-margin">
+                <div class="card card-secondary">
+                    </button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-4 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Adoption diagram</h4>
+                    <div class="aligner-wrapper">
+                      <canvas id="sessionsDoughnutChart" height="233"></canvas>
+                      <div class="wrapper d-flex flex-column justify-content-center absolute absolute-center">
+                        <h2 class="text-center mb-0 font-weight-bold">44</h2>
+                        <small class="d-block text-center text-muted font-weight-semibold mb-0">Total Adopt</small>
+                      </div>
+                    </div>
+                    <div class="wrapper mt-4 d-flex flex-wrap align-items-cente">
+                      <div class="d-flex">
+                        <span class="square-indicator bg-danger ml-2"></span>
+                        <p class="mb-0 ml-2">Has been adopted</p>
+                      </div>
+                      <div class="d-flex">
+                        <span class="square-indicator bg-success ml-2"></span>
+                        <p class="mb-0 ml-2">Not yet adopted</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-8 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body performane-indicator-card">
+                    <div class="d-sm-flex">
+                      <h4 class="card-title flex-shrink-1">Total Monthly</h4>
+                      </p>
+                    </div>
+                    <div class="d-sm-flex flex-wrap">
+                      <div class="d-flex align-items-center">
+                        <span class="dot-indicator bg-primary ml-2"></span>
+                        <p class="mb-0 ml-2 text-muted font-weight-semibold">Has been adopted (34)</p>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <span class="dot-indicator bg-info ml-2"></span>
+                        <p class="mb-0 ml-2 text-muted font-weight-semibold">Not yet adopted (10)</p>
+                      </div>
+                    </div>
+                    <div id="performance-indicator-chart" class="ct-chart mt-4"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Quick Action Toolbar Ends-->
+            <div class="row">
+              <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="d-sm-flex align-items-center mb-4">
+                      <h4 class="card-title mb-sm-0">Status</h4>
+                      <a href="#" class="text-dark ml-auto mb-3 mb-sm-0"> View all Status</a>
+                    </div>
+                    <div class="table-responsive border rounded p-1">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th class="font-weight-bold">Name</th>
+                            <th class="font-weight-bold">Amount</th>
+                            <th class="font-weight-bold">Type</th>
+                            <th class="font-weight-bold">Created at</th>
+                            <th class="font-weight-bold">Adopted at</th>
+                            <th class="font-weight-bold">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td><img class="img-sm rounded-circle" src="images/faces/face1.jpg" alt="profile image" /> Aris</td>
+                            <td>1</td>
+                            <td><img src="" alt="" class="gateway-icon mr-2" />Cat</td>
+                            <td>20 Dec 2023</td>
+                            <td>20 Dec 2023</td>
+                            <td>
+                              <div href="" class="badge badge-success p-2">Adopted</div>
+                            </td>
+                          </tr>
+                          <td>
+                            <img class="img-sm rounded-circle" src="images/faces/face2.jpg" alt="profile image"> Alfira
+                          </td>
+                          <td>1</td>
+                          <td><img src="" alt="" class="gateway-icon mr-2">Dog</td>
+                          <td>20 Dec 2023</td>
+                            <td>20 Dec 2023</td>
+                          <td>
+                            <a href="pending.html" class="badge badge-danger p-2">Pending</a>
+                          </td>
+                        </tbody>
+                      </table>
+                    </div>
+                    <div class="d-flex mt-4 flex-wrap">
+                      <p class="text-muted">Showing 1 to 10 of 44 entries</p>
+                      <nav class="ml-auto">
+                        <ul class="pagination separated pagination-info">
+                          <li class="page-item">
+                            <a href="#" class="page-link"><i class="icon-arrow-left"></i></a>
+                          </li>
+                          <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                          <li class="page-item"><a href="#" class="page-link">2</a></li>
+                          <li class="page-item"><a href="#" class="page-link">3</a></li>
+                          <li class="page-item"><a href="#" class="page-link">4</a></li>
+                          <li class="page-item">
+                            <a href="#" class="page-link"><i class="icon-arrow-right"></i></a>
+                          </li>
+                        </ul>
+                      </nav>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- content-wrapper ends -->
+          <!-- partial:partials/_footer.html -->
+          <footer class="footer">
+            <div class="d-sm-flex justify-content-center justify-content-sm-between">
+              <span class="text-muted d-block text-center text-sm-left d-sm-inline-block"></span>
+              <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center"> <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank"></a> </span>
+            </div>
+          </footer>
+          <!-- partial -->
+        </div>
+        <!-- main-panel ends -->
+      </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="./vendors/chart.js/Chart.min.js"></script>
+    <script src="./vendors/moment/moment.min.js"></script>
+    <script src="./vendors/daterangepicker/daterangepicker.js"></script>
+    <script src="./vendors/chartist/chartist.min.js"></script>
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/misc.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page -->
+    <script src="./js/dashboard.js"></script>
+    <!-- End custom js for this page -->
+  </body>
+</html>
