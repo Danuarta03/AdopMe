@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADOPTME</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme31.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="form-body on-top-mobile">
+      <div class="logo">
+        <a href="index.html">
+          <div class="logo">
+            <img class="logo-size" src="img/logo.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <div class="img-holder">
+          <div class="bg"></div>
+          <div class="info-holder simple-info">
+            <div class="mb-5">
+              <div class="type-animation">
+                <h2 class="mb-2 animated">"Thanks For Adopting"</h2>
+              </div>
+              <h3 class="mb-4"><i class="font-weight-light">Your Kindness Matters.</i></h3>
+            </div>
+            <div>
+              <p>In Every Hug, A Story Begins.<br />And With Every Wag, Love Unfolds.</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3>Form Adoption</h3>
+              <p class="text-black">Thank you for your interest in adopting an animal from Adoptme. <br />Please complete the form and check the terms and conditions.</p>
+              <form class="container-custom-padding" action="adoption.php" method="post">
+                <div class="row">
+                  <div class="col-6 col-sm-6">
+                    <input type="text" class="form-control" placeholder="First name" name="first_name" required />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Last name" name="last_name" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <input type="email" class="form-control" placeholder="E-mail Address" name="email" required />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phone_number" required />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Address" name="address" required />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="the name of the pet you want to adopt" name="pet_name" required />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <textarea class="form-control" placeholder="why you want to adopt this pet" name="reason_for_adoption" required></textarea>
+                  </div>
+                </div>
+                <div class="row top-padding">
+                  <div class="col-12 col-sm-6">
+                    <input type="checkbox" id="chk1" required /><label for="chk1">I agree on <a href="#">terms & conditions</a> of iofrm</label>
+                  </div>
+                  <!-- HTML -->
+                  <div class="col-12 col-sm-6">
+                    <div class="form-button text-right">
+                      <button id="submit" type="submit" class="ibtn less-padding">Submit Application</button>
+                    </div>
+                  </div>
+
+                  <!-- JavaScript -->
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

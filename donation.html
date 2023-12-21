@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ADOPTME</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/fontawesome-all.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/iofrm-style.css" />
+    <link rel="stylesheet" type="text/css" href="css/iofrm-theme23.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="form-body on-top-mobile">
+      <div class="logo">
+        <a href="index.html">
+          <div class="logo">
+            <img class="logo-size" src="img/logo.png" alt="" />
+          </div>
+        </a>
+      </div>
+      <div class="row">
+        <div class="img-holder">
+          <div class="bg"></div>
+          <div class="info-holder simple-info">
+            <div><img src="img/donation.png" alt="" /></div>
+            <div><h3>Thank You For Donating</h3></div>
+            <div>
+              <p>Thank you for contributing! <br />for pet welfare</p>
+            </div>
+          </div>
+        </div>
+        <div class="form-holder">
+          <div class="form-content">
+            <div class="form-items">
+              <h3>Form Donation</h3>
+              <p class="text-black">"Thank you for your interest in making a donation to AdoptMe. <br />Please complete the form and check the terms and conditions."</p>
+              <form action="donation.php" method="post" enctype="multipart/form-data">
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Name" name="name" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Phone Number" name="phone_number" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <input type="email" class="form-control" placeholder="E-mail Address" name="email" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Alamat" name="address" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Pet Name" name="pet_name" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Gender" name="gender" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="Age of pet" name="age_of_pet" />
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <input type="text" class="form-control" placeholder="size" name="size" />
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <textarea class="form-control" placeholder="pet_description " name="pet_description"></textarea>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-6">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" name="pet_images" />
+                      <label class="custom-file-label" for="validatedCustomFile"><i class="fa-solid fa-cloud-arrow-up" style="float: right"></i> Images your pet</label>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="validatedCustomFile" name="health_certificate" />
+                      <label class="custom-file-label" for="validatedCustomFile"><i class="fa-solid fa-cloud-arrow-up" style="float: right"></i> doctor's certificate of health or pet vaccination</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row top-padding">
+                  <div class="col-12 col-sm-6">
+                    <input type="checkbox" id="chk1" required /><label for="chk1">I agree on <a href="https://docs.google.com/document/d/1Um_ooVuK0Kv4O6_YLHpHYqoEnoFqpzGcBmmhFNsdlQs/edit?usp=sharing">terms & conditions</a> of iofrm</label>
+                  </div>
+                  <div class="col-12 col-sm-6">
+                    <div class="form-button text-right">
+                      <button id="submit" type="submit" class="ibtn less-padding">Submit Application</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
